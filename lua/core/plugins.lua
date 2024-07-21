@@ -39,6 +39,17 @@ require("lazy").setup({
 	-- mason for lsp servers
 	{"williamboman/mason.nvim", build = ":MasonUpdate"}, 
 	-- telescope for fast search
-	{"nvim-telescope/telescope.nvim", tag = "0.1.8", dependencies = { "nvim-lua/plenary.nvim" }}
+	{"nvim-telescope/telescope.nvim", tag = "0.1.8", dependencies = { "nvim-lua/plenary.nvim" }},
+    -- terminal
+    --{'akinsho/toggleterm.nvim', version = "*", config = true},  NOT WORKS!!!
+    -- extra info about opened file
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = {
+            'nvim-tree/nvim-web-devicons', 'linrongbin16/lsp-progress.nvim'
+        }
+    },
+    -- show changes related previous commit
+    {'lewis6991/gitsigns.nvim'}
 
 })
