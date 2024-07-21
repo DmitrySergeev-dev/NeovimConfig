@@ -24,7 +24,7 @@ sudo apt-get update
 sudo apt-get install neovim
 
  ```
-Удалите старую конфигурацию
+- Удалите старую конфигурацию
 ```bash
 #back up old configuration
 mv ~/.config/nvim ~/.config/nvim.bak
@@ -38,5 +38,7 @@ rm -R ~/.local/share/nvim
 rm -R ~/.local/state/nvim 
 rm -R ~/.cache/nvim 
 ```
+- Скопируйте содержимое репозитория в каталог ~/.config/nvim
+
 ### Важно
 Для корректной работы LSP серверов - установите их (например через :Mason в Neovim)
